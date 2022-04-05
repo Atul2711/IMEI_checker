@@ -1,0 +1,108 @@
+
+
+html {
+    background-color: var(--text-color);
+    min-height: 100vh;
+    font-family: var(--TextStyle);
+    scroll-behavior: smooth;
+
+
+  }
+:root{
+  --text-color:#E4E9FD;
+  --main-color:#341569;
+  --shadow:rgba(0, 0, 0, 0.3);
+  --white:white;
+  --TextStyle: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+
+.main-container{
+height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-items: center;
+  color:#b6aaee
+}
+p,h1{
+    color: var(--main-color);
+}
+
+
+  
+  .text{
+    color: var(--white);
+    padding: 10px;
+    /* list-style: none; */
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    padding:0.5rem 0;
+    padding-left: 1rem;
+    font-family: var(--FontStyle);
+  }
+  
+  .formStyle{
+    min-width: 30%;
+   margin: 3rem auto;
+   
+    padding: 2rem;
+    height: auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px var(--shadow);
+    align-items: center;
+  }
+ 
+  button{
+    padding: 0.5rem 1rem;
+    border-radius: 1rem ;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-weight: bolder;
+  }
+
+form label {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+input{
+  width: 15vw;
+  padding: 0.3rem;
+  border-radius: 25%;
+  outline: none;
+  border: none;
+}
+
+.footer{
+  text-align: center;
+  position: relative;
+  font-family: var(--TextStyle);
+  color:var(--main-color);
+  border: 2px solid  var(--main-color);
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+@media only screen and (max-width: 900px) {
+  
+  .main-container{
+    display:block ;
+  }
+  .text{
+    font-size: 1rem;
+  }
+  
+  .formStyle{
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  
+  button,form label,input{
+    font-size: 0.9rem;
+  }
+
+}
